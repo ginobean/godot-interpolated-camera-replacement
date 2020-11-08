@@ -1,0 +1,12 @@
+To use, if you were inheriting a node/scene from InterpolatedCamera, you can simply:
+  1. In your .tscn file(s), change the type of the relevant node/scene, from
+  InterpolatedCamera, to MyInterpolatedCamera
+  2. In the related .gd file(s), if you have 'extends InterpolatedCamera', change
+  'extends InterpolatedCamera' to 'extends MyInterpolatedCamera'
+
+This code does not handle the case where the target itself is a Camera node.
+I did not need that functionality, so I omitted it from this port.
+
+I am placing this port in the public domain (CC0).
+
+UChin Kim -- 08 nov 2020.
